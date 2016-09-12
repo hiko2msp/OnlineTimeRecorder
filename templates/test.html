@@ -1,0 +1,27 @@
+<html>
+<head>
+    {% load staticfiles %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />    
+    <title>hello1</title>
+</head>
+<body>
+    <H1 class="normal">Hello World1</H1>
+    <a href="https://hellodjango-nicoishizuka.c9users.io:8080/hello2">Hello World</a>
+    
+    <table border=1>
+        {{ test_variable }}
+            <tr>
+                <td>社員</td>
+                <td>状態</td>
+            </tr>
+        {% for employee_and_status in employee_db %}
+            <tr>
+                <td>{{ employee_and_status.name }}</td>
+                <td>{{ employee_and_status.status }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
