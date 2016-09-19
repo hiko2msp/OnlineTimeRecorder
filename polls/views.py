@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import django
 from .forms import MyForm
 from .models import SyainData
 
@@ -40,7 +41,6 @@ def form_save(request):
       message = u'登録が完了しました'
    else:
       message = u'登録に失敗しました'
-      
    return render(request, 'polls/form.html', {
       'message': message,
       'form': MyForm(),
