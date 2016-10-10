@@ -1,0 +1,146 @@
+<!--
+<html>
+ <body>
+   <table align="center">
+       <tr>
+           <td><p>ユーザー管理画面</p><BR></td>
+       </tr>
+       {% if message %}
+       <tr>
+           <td><p>{{ message }}</p><BR></td>
+       </tr>
+       {% endif %}
+       <tr>
+           <td>
+               <form action='add_syain' method='post'>
+                   {{ form.as_p }}
+                   <button type='submit' value='send'>送信</button>
+                   <input type="button" onClick="location.href="https://hellodjango-nicoishizuka.c9users.io:8080/form_user_login/form_user_login.html" value="TOP画面に戻る">
+               </form>
+           </td>     
+     　　</tr>
+     </table>
+     <div align="center">
+      <h1>電話番号検索</h1>
+      <form action='search'>
+          <input type='text' name='query' />
+          <input type='submit' value='送信' />
+      </form>
+     </div>
+     <h2 align="center">検索結果</h2> 
+     <table align="center">
+        <tr>
+        <td>電話番号</td>
+         <td>名前</td>
+        </tr> 
+        {% for syain in search_result %}
+        <tr>
+         <td>{{ syain.phone }}</td>
+         <td>{{ syain.name }}</td>
+        </tr> 
+        {% endfor %}
+     </table>
+ </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome! Neovision Consulting</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static "css/reset.css" %}">
+        <link rel="stylesheet" href="{% static "css/nvc.css" %}">
+    </head>
+    <body>
+        <div id="container">
+        <header>
+            <ul id="head-menu">
+            	<ul id="head-menu-1">
+                	<li><a href="https://hellodjango-nicoishizuka.c9users.io:8080/form_user_login/form_user_login.html">ユーザー管理・ログイン</a></li>
+                </ul>
+                <ul id="head-menu-2">
+                	<li><a href="https://hellodjango-nicoishizuka.c9users.io:8080/form_time_login/form_time_login.html">タイムレコーダー・ログイン</a></li>
+                </ul>
+                <ul id="head-menu-3">
+                	<li><a href="http://python.systems/">TOP画面に戻る</a></li>
+                </ul>        
+            </ul>
+        </header>
+        <div id="side-bar">
+        <side>
+        </side>
+        <footer>
+            <table>
+            	<ul id="main-menu">
+            		<ul id="main-menu-1">
+                		<li><a href="#">ユーザー管理画面</a></li>
+                	</ul>
+                	<tr>
+                		<ul id="main-s1">
+            				<td>■電話番号（01201234567）</td>
+            			</ul>
+            		    <ul id="main-s2">
+            		    	<td><input type="text" id="tlephone" value="01201234567"></td> 
+            			</ul>
+            		</tr>
+               		<tr>
+            		    <ul id="main-s1">
+            		    	<td>■日付{{ current_date }}</td> 
+            			</ul>
+            			<ul id="main-s2">
+               				<td><input type="text" id="date" value="{{ current_date }}"></td> 
+               			</ul>
+               		</tr>
+               		<tr>
+            		    <ul id="main-s1">
+            		    	<td>■パスワード（１２３４）</td> 
+            			</ul>
+            			<ul id="main-s2">
+               				<td><input type="text" id="password" value="1234"></td> 
+               			</ul>
+               		</tr>
+               		<tr>
+            		    <ul id="main-s1">
+            		    	<td>■氏名（鈴木太郎）</td> 
+            			</ul>
+            			<ul id="main-s2">
+               				<td><input type="text" id="name" value="鈴木太郎"></td> 
+               			</ul>
+               		</tr>
+               		<tr>
+            		    <ul id="main-s1">
+            		    	<td>■出社時間（９：００）</td> 
+            			</ul>
+            			<ul id="main-s2">
+               				<td><input type="text" id="job_start" value="09:00"></td> 
+               			</ul>
+               		</tr>
+               		<tr>
+            		    <ul id="main-s1">
+            		    	<td>■退社時間（１８：００）</td> 
+            			</ul>
+            			<ul id="main-s2">
+               				<td><input type="text" id="job_end" value="18:00"></td> 
+               			</ul>
+               		</tr>
+               		<tr>
+            		    <ul id="main-s1">
+            		    	<td>■ステータス（出社）</td> 
+            			</ul>
+            			<ul id="main-s2">
+            				<td><input type="radio" name="q2" value="出社"  checked>出社
+                                <input type="radio" name="q2" value="退社"  >退社
+                                <input type="radio" name="q2" value="休暇"  >休暇 </td>
+					  	</ul>
+            		<!--  <td><input type="text" name="status" autocomplete="time"></td> -->
+               		</tr>
+               		<form>
+                            <td><input type="button" onClick="location.href='https://hellodjango-nicoishizuka.c9users.io:8080/form_user_login/form_user_login.html'" value="登録"></td>
+                        </form>
+                </ul>	
+            </table>
+        </footer>
+    </body>
+</html>

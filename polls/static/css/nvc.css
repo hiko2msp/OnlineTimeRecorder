@@ -1,0 +1,112 @@
+#head-menu{
+  width: 98%;
+  height: 45px;
+  padding: 0 20px;
+  margin: 0;
+  list-style-type: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #ff7400), color-stop(0.00, #ffa443));
+  background: -webkit-linear-gradient(#ffa443, #ff7400);
+  background: -moz-linear-gradient(#ffa443, #ff7400);
+  background: -o-linear-gradient(#ffa443, #ff7400);
+  background: -ms-linear-gradient(#ffa443, #ff7400);
+  background: linear-gradient(#ffa443, #ff7400);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #aaa;
+}
+#head-menu li {
+  width: 20%;
+  float: left;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#head-menu li a {
+  width: auto;
+  color: #fff;
+/*  font-size: 14px; */
+  font-weight: bold;
+  margin: 8px;
+  padding: 5px 0 4px 0;
+  text-decoration: none;
+  text-shadow: 0px -1px 1px rgba(0,0,0,0.7);
+  display: block;
+  border-radius: 10px;
+}
+#head-menu li a:hover {
+  background: rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 3px rgba(255,255,255,0.5), 1px 1px 3px rgba(0,0,0,0.5) inset;
+}
+#head-menu-1 {
+  font-size: 14px;
+}
+#head-menu-2 {
+  font-size: 14px;
+}
+#head-menu-3 {
+  font-size: 18px;
+}
+#head-menu-4 {
+  font-size: 14px;
+}
+#head-menu-5 {
+  font-size: 14px;
+}
+/*
+#main-menu {
+  width: 96.5%;
+  height: 45px;
+  padding: 0 20px;
+  margin: 0;
+  list-style-type: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #ff7400), color-stop(0.00, #ffa443));
+  background: -webkit-linear-gradient(#ffa443, #ff7400);
+  background: -moz-linear-gradient(#ffa443, #ff7400);
+  background: -o-linear-gradient(#ffa443, #ff7400);
+  background: -ms-linear-gradient(#ffa443, #ff7400);
+  background: linear-gradient(#ffa443, #ff7400);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #aaa;
+}
+#main-menu li {
+  width: 25%;
+  float: left;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#main-menu li a {
+  width: auto;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 8px;
+  padding: 5px 0 4px 0;
+  text-decoration: none;
+  text-shadow: 0px -1px 1px rgba(0,0,0,0.7);
+  display: block;
+  border-radius: 10px;
+}
+#main-menu li a:hover {
+  background: rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 3px rgba(255,255,255,0.5), 1px 1px 3px rgba(0,0,0,0.5) inset;
+}
+*/
+
+td {
+  padding: 0px 10px 0px 10px;
+}
+table {
+	margin-right : 25%;
+	margin-left : 25%;
+	width : auto;
+}
+#main-menu-1 {
+	margin-right : 25%;
+	margin-left : 25%;
+	width : auto;
+}
+#footer-info {
+	margin-right : 25%;
+	margin-left : 25%;
+	width : auto;
+}

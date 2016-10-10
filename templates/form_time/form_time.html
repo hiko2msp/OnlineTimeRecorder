@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome! Neovision Consulting</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static "css/reset.css" %}">
+        <link rel="stylesheet" href="{% static "css/nvc.css" %}">
+    </head>
+    <body>
+        <div id="container">
+        <header>
+            <ul id="head-menu">
+            	<ul id="head-menu-1">
+                	<li><a href="https://hellodjango-nicoishizuka.c9users.io:8080/form_user_login.html_login/form_user_login.html">ユーザー管理ログイン</a></li>
+                </ul>
+                <ul id="head-menu-2">
+                	<li><a href="https://hellodjango-nicoishizuka.c9users.io:8080/form_time_login/form_time_login.html">タイムレコーダーログイン</a></li>
+                </ul>
+                <ul id="head-menu-3">
+                	<li><a href="http://python.systems/">TOP画面に戻る</a></li>
+                </ul>        
+            </ul>
+        </header>
+        <div id="side-bar">
+        <side>
+        </side>
+        <footer>
+            <table>
+            	<ul id="main-menu">
+            		<ul id="main-menu-1">
+                		<li><a href="#">タイムレコーダー</a></li>
+                	</ul>
+                	<tr>
+            		    <ul id="main-s1">
+            		        <td>■今日の日付は、</td> 
+            			</ul>
+            			<ul id="main-s2">
+            			    <td>{{ current_date }}です。</td>
+					  	</ul>
+					</tr>
+					<tr>
+            		    <ul id="main-s1">
+            		        <td>■現在の時刻は、</td> 
+            			</ul>
+            			<ul id="main-s2">
+            			    <td>{{ current_time }}です。</td>
+					  	</ul>
+					</tr>
+					<tr>  	
+					  	<ul id="main-s1">
+            		    	<td>■ステータス（出社）</td> 
+            			</ul>
+            			<ul id="main-s2">
+            				<td><input type="radio" name="q2" value="出社" checked>出社
+                                <input type="radio" name="q2" value="退社" >退社
+                                <input type="radio" name="q2" value="休暇" >休暇 </td>
+					  	</ul>
+					  	
+  			   		</tr>
+               		<form>
+                            <td><input type="button" onClick="location.href='https://hellodjango-nicoishizuka.c9users.io:8080/form_time_login/form_time_login.html'" value="登録"></td>
+                    </form>
+                </ul>	
+            </table>
+        </footer>
+    </body>
+</html>

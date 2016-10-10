@@ -14,13 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-import polls.views as views_polls
-# from polls import views as views_polls でも問題ありません
+from polls import views
+# import form_user.views
 from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
- url(r'^form_test', views_polls.form_test),
- url(r'^add_syain', views_polls.form_save),
- url(r'^search', views_polls.search),
+  url(r'^form_user_save', views.form_user_save),
+  url(r'^form_top', views.form_top),
+  url(r'form_user_login/form_user_login.html', views.form_user_login_function),
+  # views_form_user_loginというモジュールはありません
+  url(r'form_time_login/form_time_login.html', views.form_time_login_function),
+  url(r'^form_user', views.form_user),
+  url(r'^form_time', views.form_time),
+  url(r'^add_syain', views.form_save),
+  url(r'^search', views.search),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
