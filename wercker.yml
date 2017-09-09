@@ -1,8 +1,8 @@
+# The container definition we want to use for developing our app
 box: python:2.7-slim
 
-build:
+# in this dev clause we define the steps we want to take when developing.
+dev:
   steps:
+    # first we want to run pip-install to install all the dependencies
     - pip-install
-    - script:
-        code: |-
-          uname -a
