@@ -1,0 +1,5 @@
+build:
+  steps:
+    - script:
+        code: |-
+          uname -a
