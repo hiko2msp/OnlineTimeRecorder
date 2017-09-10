@@ -6,3 +6,6 @@ build:
   steps:
     # first we want to run pip-install to install all the dependencies
     - pip-install
+    - script:
+      code: |-
+        uname -a
