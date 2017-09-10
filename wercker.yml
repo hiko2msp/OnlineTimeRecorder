@@ -5,3 +5,4 @@ build:
     - script:
       code: |-
         echo "Start Deploy"
+        ssh root@160.16.241.133 "cd OnlineTimeRecorder && git pull origin master"
