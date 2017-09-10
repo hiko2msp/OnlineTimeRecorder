@@ -1,5 +1,5 @@
 # The container definition we want to use for developing our app
-box: python:2.7-slim
+box: python
 
 # in this dev clause we define the steps we want to take when developing.
 dev:
