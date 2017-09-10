@@ -2,7 +2,7 @@
 box: python
 
 # in this dev clause we define the steps we want to take when developing.
-dev:
+build:
   steps:
     # first we want to run pip-install to install all the dependencies
     - pip-install
